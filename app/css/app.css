@@ -23,19 +23,57 @@ h3 {
 HEADER
 *********************************************************/
 
-header h1,
-header h2,
-header li {
+header {
+  padding-top: 5px;
   text-align: center;
 }
 
 header h1 {
   font-size: 2em;
-  margin-bottom: 0.25em;
+  margin-bottom: 2px;
 }
 
 header h2 {
   font-size: 0.75em;
+  margin-top: -5px;
+}
+
+
+
+/********************************************************
+NAVIGATION
+*********************************************************/
+
+nav ul {
+  padding-left: 0;
+}
+
+nav li {
+  display: inline-block;
+  padding-bottom: 5px;
+
+}
+
+nav a {
+  padding: 0 10px 5px;
+}
+
+
+
+/********************************************************
+FOOTER
+*********************************************************/
+
+footer {
+  text-align: center;
+  font-size: 0.75em;
+  color: #bbb;
+}
+
+.social-icon {
+  width: 20px;
+  height: 20px;
+  margin: 0 3px;
 }
 
 
