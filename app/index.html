@@ -6,31 +6,48 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>My AngularJS App</title>
+  <title>Darkside | Mercenaries</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="css/app.css">
   <link rel="stylesheet" href="css/normalize.css">
+  <link href='https://fonts.googleapis.com/css?family=Fjalla+One|Oxygen' rel='stylesheet' type='text/css'>
 </head>
 <body>
 
   <header>
-    Header
+    <a href="#">
+      <h1>Darkside</h1>
+      <h2>Mercenaries | Contractors</h2>
+    </a>
+    <nav>
+      <ul>
+        <li><a href="#">Company</a></li>
+        <li><a href="#">Recruits</a></li>
+        <li><a href="#">Missions</a></li>
+      </ul>
+    </nav>
   </header>
 
-  <section>
-    Section
-  </section>
+  <ng-view></ng-view>
 
   <footer>
-    Footer
+    <a href="http://twitter.com/darkside">
+      <img src="img/twitter-wrap.png" alt="Twitter Logo" />
+    </a>
+    <a href="http://facebook.com/darkside">
+      <img src="img/facebook-wrap.png" alt="Facebook Logo" />
+    </a>
+    <p>&copy; 2015 Darkside Mercenaries.</p>
   </footer>
 
   <!-- vendor libraries -->
   <script src="bower_components/angular/angular.js"></script>
   <script src="bower_components/angular-route/angular-route.js"></script>
   <script src="js/vendor/angular-resource.js"></script>
+  <script src="js/vendor/jquery-1.11.2.js"></script>
   <!-- my libraries -->
   <script src="js/app.js"></script>
+  <script src="js/routes.js"></script>
 </body>
 </html>

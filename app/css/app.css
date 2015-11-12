@@ -1,0 +1,63 @@
+
+/********************************************************
+GLOBAL
+*********************************************************/
+
+body {
+  font-family: 'Oxygen', sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3 {
+  font-family: 'Fjalla One', sans-serif;
+}
+
+
+
+/********************************************************
+HEADER
+*********************************************************/
+
+header h1,
+header h2,
+header li {
+  text-align: center;
+}
+
+header h1 {
+  font-size: 2em;
+  margin-bottom: 0.25em;
+}
+
+header h2 {
+  font-size: 0.75em;
+}
+
+
+
+/********************************************************
+COLORS
+*********************************************************/
+
+body {
+  background-color: #fff;
+  color: #999;
+}
+
+a {
+  color: #5f9ea0;
+}
+
+header {
+  color: white;
+  background-color: black;
+}
+
+header a {
+  color: #fff;
+}
