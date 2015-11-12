@@ -1,1 +1,1 @@
-angular.module("darksideApp");
+angular.module("darksideApp", ['ngRoute', 'ngResource']);

@@ -4,6 +4,15 @@
 angular.module("darksideApp")
   .config(["$routeProvider", function($routeProvider) {
     $routeProvider
+      .when('/company', {
+        templateUrl: 'templates/pages/company/index.html'
+      })
+      .when('/missions', {
+        templateUrl: 'templates/pages/missions/index.html'
+      })
+      .when('/recruits', {
+        templateUrl: 'templates/pages/recruits/index.html'
+      })
       .when('/', {
         templateUrl: 'index.html'
       })
