@@ -163,6 +163,10 @@ header a {
   color: #fff;
 }
 
+h3 {
+  color: #555;
+}
+
 header #logo {
   color: #fff;
   transition: color 1s;
