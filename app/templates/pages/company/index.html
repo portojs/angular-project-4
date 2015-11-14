@@ -27,7 +27,9 @@
   <section id="page-company-members">
     <h3>Our team</h3>
     <ul>
-      <li></li>
+      <li ng-repeat="member in team">
+        <p>{{member.name}}</p>
+      </li>
     </ul>
   </section>
 
