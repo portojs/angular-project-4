@@ -27,8 +27,16 @@
   <section id="page-company-members">
     <h3>Our team</h3>
     <ul>
-      <li ng-repeat="member in team">
-        <p>{{member.name}}</p>
+      <li ng-repeat="item in team">
+        <img ng-src="img/{{item.image}}" alt="Image of {{item.name}}" />
+        <ul class="item-description">
+          <li><b>Name:</b> {{item.name}}</li>
+          <li><b>Email:</b> {{item.email}}</li>
+          <li><b>Age:</b> {{item.age}}</li>
+          <li><b>Specialty:</b> {{item.specialty}}</li>
+          <li><b>Bio:</b> {{item.bio}}</li>
+          <li><b>Kills:</b> {{item.kills}}</li>
+        </ul>
       </li>
     </ul>
   </section>

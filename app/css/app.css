@@ -139,6 +139,22 @@ li.twitter a {
   background: url('../img/twitter.png');
 }
 
+#page-company-members li {
+  background: #333;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 10px;
+}
+
+#page-company-members img {
+  display: block;
+  margin: 0 auto;
+  width: 140px;
+  height: 140px;
+  border-radius: 100%;
+}
+
+
 
 
 /********************************************************
