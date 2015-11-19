@@ -15,7 +15,7 @@ angular.module("darksideApp")
         templateUrl: 'templates/pages/recruits/index.html'
       })
       .when('/', {
-        templateUrl: 'index.html'
+        templateUrl: 'templates/pages/company/index.html'
       })
       .otherwise({redirectTo: '/'})
   }]);
