@@ -10,6 +10,13 @@
   <section id="page-missions-categories">
     <label for="mission-search">Look up:</label>
     <input id="mission-search" type="search">
+    <div>
+      <ul>
+        <li ng-repeat="item in time">
+          {{item.name}}
+        </li>
+      </ul>
+    </div>
   </section>
 
 </div>

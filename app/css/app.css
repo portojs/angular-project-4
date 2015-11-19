@@ -181,6 +181,7 @@ PAGE: MISSIONS
   border-left: none;
   border-right: none;
   border-bottom: solid 1px #ddd;
+  width: 100%;
   -webkit-transition: border-bottom 1s;
   -moz-transition: border-bottom 1s;
   -ms-transition: border-bottom 1s;
@@ -192,7 +193,35 @@ PAGE: MISSIONS
   border-bottom: solid 1px #000;
 }
 
+#page-missions-categories div {
+  text-align: center;
+}
 
+#page-missions-categories ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+#page-missions-categories li {
+  display: inline-block;
+  padding: 0 20px;
+  border-right: solid 1px;
+  cursor: pointer;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+#page-missions-categories li:last-child {
+  border-right: none;
+}
+
+#page-missions-categories li:hover {
+  color: white;
+  background-color: black;
+}
 
 /********************************************************
 COLORS

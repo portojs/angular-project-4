@@ -9,7 +9,8 @@ angular.module("darksideApp")
         controller: "CompanyIndexController"
       })
       .when('/missions', {
-        templateUrl: 'templates/pages/missions/index.html'
+        templateUrl: 'templates/pages/missions/index.html',
+        controller: 'TimePeriodsController'
       })
       .when('/recruits', {
         templateUrl: 'templates/pages/recruits/index.html'
