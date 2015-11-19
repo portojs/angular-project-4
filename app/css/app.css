@@ -154,6 +154,11 @@ li.twitter a {
   border-radius: 100%;
 }
 
+#page-company-members li li {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
 
 
 

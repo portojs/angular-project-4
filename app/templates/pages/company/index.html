@@ -28,14 +28,14 @@
     <h3>Our team</h3>
     <ul>
       <li ng-repeat="item in team">
-        <img ng-src="img/{{item.image}}" alt="Image of {{item.name}}" />
+        <img ng-src="img/{{item.image}}" alt="Image of {{item.name}}" ng-if="item.image" />
         <ul class="item-description">
-          <li><b>Name:</b> {{item.name}}</li>
-          <li><b>Email:</b> {{item.email}}</li>
-          <li><b>Age:</b> {{item.age}}</li>
-          <li><b>Specialty:</b> {{item.specialty}}</li>
-          <li><b>Bio:</b> {{item.bio}}</li>
-          <li><b>Kills:</b> {{item.kills}}</li>
+          <li ng-if="item.name"><b>Name:</b> {{item.name}}</li>
+          <li ng-if="item.email"><b>Email:</b> {{item.email}}</li>
+          <li ng-if="item.age"><b>Age:</b> {{item.age}}</li>
+          <li ng-if="item.specialty"><b>Specialty:</b> {{item.specialty}}</li>
+          <li ng-if="item.bio"><b>Bio:</b> {{item.bio}}</li>
+          <li ng-if="item.kills"><b>Kills:</b> {{item.kills}}</li>
         </ul>
       </li>
     </ul>
