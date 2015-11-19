@@ -176,6 +176,22 @@ PAGE: MISSIONS
   margin-bottom: 40px;
 }
 
+#mission-search {
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: solid 1px #ddd;
+  -webkit-transition: border-bottom 1s;
+  -moz-transition: border-bottom 1s;
+  -ms-transition: border-bottom 1s;
+  -o-transition: border-bottom 1s;
+  transition: border-bottom 1s;
+}
+
+#mission-search:hover {
+  border-bottom: solid 1px #000;
+}
+
 
 
 /********************************************************
