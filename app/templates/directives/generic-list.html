@@ -1,5 +1,5 @@
 <ul>
-  <li ng-repeat="item in list">
+  <li ng-repeat="item in list | filter: {name: search}">
     <img ng-src="img/{{item.image}}" alt="Image of {{item.name}}" ng-if="item.image" />
     <ul class="item-description">
       <li ng-if="item.name"><b>Name:</b> {{item.name}}</li>
@@ -8,6 +8,8 @@
       <li ng-if="item.specialty"><b>Specialty:</b> {{item.specialty}}</li>
       <li ng-if="item.bio"><b>Bio:</b> {{item.bio}}</li>
       <li ng-if="item.kills"><b>Kills:</b> {{item.kills}}</li>
+      <li ng-if="item.time"><b>Time:</b> {{item.time}}</li>
+      <li ng-if="item.location"><b>Location:</b> {{item.location}}</li>
     </ul>
   </li>
 </ul>

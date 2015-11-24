@@ -7,7 +7,8 @@ angular.module("darksideApp")
       restrict: "E",
       templateUrl: "templates/directives/generic-list.html",
       scope: {
-        list: "="
+        list: "=",
+        search: "="
       }
     }
   });

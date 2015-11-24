@@ -8,20 +8,14 @@
   </section>
 
   <section id="page-missions-categories">
-    <label for="mission-search">Look up:</label>
-    <input id="mission-search" type="search">
+    <label for="mission-search">Look up by name:</label>
+    <input id="mission-search" type="search" ng-model="search.input">
     <div>
-      <ul>
-        <li ng-repeat="item in time">
-          {{item.name}}
-        </li>
-      </ul>
-      <ul>
-        <li ng-repeat="item in locations">
-          {{item.name}}
-        </li>
-      </ul>
+      <category-sort time="time"></category-sort>
+      <category-sort locations="locations"></category-sort>
     </div>
   </section>
+
+  <generic-list list="missions" search="search.input"></generic-list>
 
 </div>
