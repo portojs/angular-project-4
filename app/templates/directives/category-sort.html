@@ -1,8 +1,8 @@
 <ul>
-  <li ng-repeat="item in time" ng-if="time">
+  <li ng-repeat="item in time" ng-if="time" ng-click="setActiveTime(item)" ng-class="{ activeTime : getActiveTime() === item.name}">
     {{item.name}}
   </li>
-  <li ng-repeat="item in locations" ng-if="locations">
+  <li ng-repeat="item in locations" ng-if="locations" ng-click="setActiveLocation(item)" ng-class="{ activeTime : getActiveLocation() === item.name}">
     {{item.name}}
   </li>
 </ul>

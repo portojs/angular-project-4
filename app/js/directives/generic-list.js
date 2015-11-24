@@ -8,7 +8,8 @@ angular.module("darksideApp")
       templateUrl: "templates/directives/generic-list.html",
       scope: {
         list: "=",
-        search: "="
+        search: "=",
+        activeTime: "="
       }
     }
   });

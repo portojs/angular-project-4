@@ -223,6 +223,12 @@ PAGE: MISSIONS
   background-color: black;
 }
 
+.activeTime {
+  background-color: tomato;
+}
+
+
+
 /********************************************************
 COLORS
 *********************************************************/

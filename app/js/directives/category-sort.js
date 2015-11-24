@@ -8,7 +8,37 @@ angular.module("darksideApp")
       templateUrl: "templates/directives/category-sort.html",
       scope: {
         time: "=",
-        locations: "="
+        locations: "=",
+        activeTime: "=",
+        activeLocation: "="
+      },
+      controller: function($scope) {
+        $scope.getActiveTime = function() {
+          return $scope.activeTime;
+        };
+        $scope.setActiveTime = function(time) {
+          if ($scope.activeTime === time.name) {
+            $scope.notActiveTime();
+          } else {
+            $scope.activeTime = time.name;
+          }
+        };
+        $scope.notActiveTime = function() {
+          $scope.activeTime = "";
+        };
+        $scope.getActiveLocation = function() {
+          return $scope.activeLocation;
+        };
+        $scope.setActiveLocation = function(location) {
+          if ($scope.activeLocation === location.name) {
+            $scope.notActiveLocation();
+          } else {
+            $scope.activeLocation = location.name;
+          }
+        };
+        $scope.notActiveLocation = function() {
+          $scope.activeLocation = "";
+        };
       }
     };
   });
