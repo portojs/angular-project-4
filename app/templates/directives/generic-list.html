@@ -2,8 +2,10 @@
   <li ng-repeat="item in list | filter: {name: search} | filter: {time: activeTime} | filter: {location: activeLocation}">
     <img ng-src="img/{{item.image}}" alt="Image of {{item.name}}" ng-if="item.image" />
     <ul class="item-description">
+      <img ng-src="{{gravatarUrl(item.email)}}" alt="{{item.name}}"/>
       <li ng-if="item.name"><b>Name:</b> {{item.name}}</li>
       <li ng-if="item.email"><b>Email:</b> {{item.email}}</li>
+      <li ng-if="item.skill"><b>Skill:</b> {{item.skill}}</li>
       <li ng-if="item.age"><b>Age:</b> {{item.age}}</li>
       <li ng-if="item.specialty"><b>Specialty:</b> {{item.specialty}}</li>
       <li ng-if="item.bio"><b>Bio:</b> {{item.bio}}</li>

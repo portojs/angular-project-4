@@ -1,1 +1,4 @@
-angular.module("darksideApp", ['ngRoute', 'ngResource']);
+angular.module("darksideApp", ['ngRoute', 'ngResource'])
+  .config(function(GravatarProvider) {
+    GravatarProvider.setSize(80);
+  });

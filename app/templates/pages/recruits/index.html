@@ -10,32 +10,28 @@
   <section id="page-recruits-form-button">
     <h3>Send your details</h3>
     <p>Press the button below and enter your details, we will contact you in due time:</p>
-    <button>Open registration form</button>
+    <button ng-click="showing = !showing">{{showing? "Close registration form" : "Open registration form"}}</button>
   </section>
 
-  <section id="page-recruits-form-form">
-    <form>
-      <div>
-        <label for="form-name">Name</label>
-        <input type="text" id="form-name" required />
-      </div>
-      <div>
-        <label for="form-email">Email</label>
-        <input type="email" id="form-email" required />
-      </div>
-      <div>
-        <label for="form-skill">Skill</label>
-        <select id="form-skill">
-          <option>Combat</option>
-          <option>Data</option>
-          <option>Planning</option>
-        </select>
-      </div>
+  <section id="page-recruits-form-form" ng-show="showing">
+    <form name="recruitForm" ng-submit="recruitForm.$valid && addRecruit()" novalidate>
+      <label for="form-name">Name</label>
+      <input ng-model="recruit.name" type="text" id="form-name" required />
+      <label for="form-email">Email</label>
+      <input ng-model="recruit.email" type="email" id="form-email" required />
+      <label for="form-skill">Skill</label>
+      <select ng-model="recruit.skill" id="form-skill">
+        <option selected="selected">Combat</option>
+        <option>Data</option>
+        <option>Planning</option>
+      </select>
+      <button type="submit">Submit</button>
     </form>
   </section>
 
   <section>
     <h3>Our candidates</h3>
+    <generic-list list="recruits" gravatar-url="gravatarUrl"></generic-list>
   </section>
 
 </div>

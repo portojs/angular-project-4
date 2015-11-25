@@ -10,7 +10,8 @@ angular.module("darksideApp")
         list: "=",
         search: "=",
         activeTime: "=",
-        activeLocation: "="
+        activeLocation: "=",
+        gravatarUrl: "="
       }
     }
   });

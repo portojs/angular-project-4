@@ -6,14 +6,15 @@ angular.module("darksideApp")
     $routeProvider
       .when('/company', {
         templateUrl: 'templates/pages/company/index.html',
-        controller: "CompanyIndexController"
+        controller: 'CompanyIndexController'
       })
       .when('/missions', {
         templateUrl: 'templates/pages/missions/index.html',
         controller: 'TimePeriodsController'
       })
       .when('/recruits', {
-        templateUrl: 'templates/pages/recruits/index.html'
+        templateUrl: 'templates/pages/recruits/index.html',
+        controller: 'RecruitsIndexController'
       })
       .when('/', {
         templateUrl: 'templates/pages/company/index.html'
