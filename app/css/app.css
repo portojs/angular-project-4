@@ -198,7 +198,7 @@ PAGE: MISSIONS
 
 #page-missions-categories li {
   display: inline-block;
-  padding: 0 20px;
+  padding: 0 15px;
   border-right: solid 1px;
   cursor: pointer;
   -webkit-transition: all 0.5s;
