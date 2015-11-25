@@ -9,7 +9,8 @@ angular.module("darksideApp")
       scope: {
         list: "=",
         search: "=",
-        activeTime: "="
+        activeTime: "=",
+        activeLocation: "="
       }
     }
   });

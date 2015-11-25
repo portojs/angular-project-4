@@ -11,11 +11,11 @@
     <label for="mission-search">Look up by name:</label>
     <input id="mission-search" type="search" ng-model="search.input">
     <div>
-      <category-sort time="time" activeTime="activeTime"></category-sort>
-      <category-sort locations="locations"></category-sort>
+      <category-sort time="time" active-time="activeTime"></category-sort>
+      <category-sort locations="locations" active-location="activeLocation"></category-sort>
     </div>
   </section>
 
-  <generic-list list="missions" search="search.input" activeTime="activeTime"></generic-list>
+  <generic-list list="missions" search="search.input" active-time="activeTime" active-location="activeLocation"></generic-list>
 
 </div>

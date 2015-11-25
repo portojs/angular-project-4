@@ -1,5 +1,5 @@
 <ul>
-  <li ng-repeat="item in list | filter: {name: search} | filter: {time: ActiveTime}">
+  <li ng-repeat="item in list | filter: {name: search} | filter: {time: activeTime} | filter: {location: activeLocation}">
     <img ng-src="img/{{item.image}}" alt="Image of {{item.name}}" ng-if="item.image" />
     <ul class="item-description">
       <li ng-if="item.name"><b>Name:</b> {{item.name}}</li>
