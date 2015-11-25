@@ -17,6 +17,13 @@ h3 {
   font-family: 'Fjalla One', sans-serif;
 }
 
+h3 {
+  font-size: 1.5em;
+  padding: 0 0 0 10px;
+  margin-bottom: 0;
+  border-left: 1px #888 solid;
+}
+
 #wrapper {
   max-width: 1024px;
   margin: 30px auto 0;
@@ -82,7 +89,6 @@ FOOTER
 footer {
   text-align: center;
   font-size: 0.75em;
-  color: #bbb;
   padding-top: 50px;
 }
 
@@ -97,13 +103,6 @@ footer {
 /********************************************************
 PAGE: COMPANY
 *********************************************************/
-
-#page-company h3 {
-  font-size: 1.5em;
-  padding: 0 0 0 10px;
-  margin-bottom: 0;
-  border-left: 1px #888 solid;
-}
 
 #page-company section {
   margin-bottom: 40px;
@@ -139,7 +138,6 @@ li.twitter a {
 }
 
 #page-company-members li {
-  background: #333;
   padding: 10px;
   margin: 10px 0;
   border-radius: 10px;
@@ -163,13 +161,6 @@ li.twitter a {
 /********************************************************
 PAGE: MISSIONS
 *********************************************************/
-
-#page-missions h3 {
-  font-size: 1.5em;
-  padding: 0 0 0 10px;
-  margin-bottom: 0;
-  border-left: 1px #888 solid;
-}
 
 #page-missions section {
   margin-bottom: 40px;
@@ -212,16 +203,11 @@ PAGE: MISSIONS
   border-right: none;
 }
 
-#page-missions-categories li:hover {
-  color: white;
-  background-color: black;
-}
-
-.activeTime {
-  background-color: tomato;
-}
 
 
+/********************************************************
+PAGE: RECRUITS
+*********************************************************/
 
 /********************************************************
 COLORS
@@ -266,4 +252,21 @@ nav a:hover {
 nav a.selected {
   color: #000;
   background-color: #fff;
+}
+
+footer {
+  color: #bbb;
+}
+
+#page-company-members li {
+  background: #333;
+}
+
+#page-missions-categories li:hover {
+  color: white;
+  background-color: black;
+}
+
+.activeTime {
+  background-color: tomato;
 }
