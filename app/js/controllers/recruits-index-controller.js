@@ -2,7 +2,8 @@
  * Created by Peter on 25.11.2015.
  */
 angular.module("darksideApp")
-  .controller("RecruitsIndexController", function($scope, Gravatar) {
+  .controller("RecruitsIndexController", function($scope, Gravatar, $location) {
+    console.log($location.path());
     $scope.showing = false;
     $scope.recruit = {};
     $scope.recruits = [
