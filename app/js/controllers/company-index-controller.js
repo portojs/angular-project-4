@@ -4,5 +4,5 @@
 angular.module("darksideApp")
   .controller("CompanyIndexController", function($scope, Team, $location){
     $scope.team = Team.query();
-    console.log($location.path());
+    //console.log($location.path());
   });

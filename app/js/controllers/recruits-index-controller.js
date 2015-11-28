@@ -3,7 +3,7 @@
  */
 angular.module("darksideApp")
   .controller("RecruitsIndexController", function($scope, Gravatar, $location) {
-    console.log($location.path());
+    //console.log($location.path());
     $scope.showing = false;
     $scope.recruit = {};
     $scope.recruits = [

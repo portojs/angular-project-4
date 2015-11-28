@@ -8,13 +8,22 @@ angular.module("darksideApp")
       templateUrl: "templates/directives/main-header.html",
       controller: function($location, $scope){
         console.log($location.path());
-        $scope.selected = 1;
+        $scope.checkTab = function() {
+          if ($location.path() === "/company") {
+            return 1;
+          } else if ($location.path() === "/recruits") {
+            return 2;
+          } else if ($location.path() === "/missions") {
+            return 3;
+          }
+        };
         $scope.checkSelected = function(tab) {
           return $scope.selected === tab;
         };
         $scope.selectTab = function(tab) {
           $scope.selected = tab;
-        }
+        };
+        $scope.selected = $scope.checkTab();
       },
       scope: {
         selected: "="

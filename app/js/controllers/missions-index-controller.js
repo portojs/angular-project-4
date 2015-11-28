@@ -6,5 +6,5 @@ angular.module("darksideApp")
     $scope.time = Time.query();
     $scope.locations = Locations.query();
     $scope.missions = Missions.query();
-    console.log($location.path());
+    //console.log($location.path());
   });
