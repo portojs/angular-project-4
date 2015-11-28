@@ -1,0 +1,47 @@
+@media screen and (min-width: 540px) {
+
+  body {
+    background-color: greenyellow;
+  }
+
+  /********************************************************
+  PAGE: RECRUITS
+  *********************************************************/
+
+  #page-recruits #generic-list .generic-list-item {
+    float: left;
+    width: 50%;
+    display: inline-block;
+  }
+
+  #page-recruits #generic-list .generic-list-item:nth-child(3) {
+    clear: left;
+  }
+
+}
+
+@media screen and (min-width: 850px) {
+
+  body {
+    background-color: tomato;
+  }
+
+  /********************************************************
+  PAGE: RECRUITS
+  *********************************************************/
+
+  #page-recruits #generic-list .generic-list-item {
+    width: 33%;
+    display: inline-block;
+  }
+
+  #page-recruits #generic-list .generic-list-item:nth-child(3) {
+    clear: none;
+  }
+
+  #page-recruits #generic-list .generic-list-item:nth-child(4) {
+    clear: left;
+  }
+
+
+}

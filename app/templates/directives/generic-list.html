@@ -1,8 +1,8 @@
-<ul>
-  <li ng-repeat="item in list | filter: {name: search} | filter: {time: activeTime} | filter: {location: activeLocation}">
+<ul id="generic-list">
+  <li class="generic-list-item" ng-repeat="item in list | filter: {name: search} | filter: {time: activeTime} | filter: {location: activeLocation}">
     <img ng-src="img/{{item.image}}" alt="Image of {{item.name}}" ng-if="item.image" />
     <ul class="item-description">
-      <img ng-src="{{gravatarUrl(item.email)}}" alt="{{item.name}}"/>
+      <img ng-if="item.recruit === true" ng-src="{{gravatarUrl(item.email)}}" alt="{{item.name}}"/>
       <li ng-if="item.name"><b>Name:</b> {{item.name}}</li>
       <li ng-if="item.email"><b>Email:</b> {{item.email}}</li>
       <li ng-if="item.skill"><b>Skill:</b> {{item.skill}}</li>
