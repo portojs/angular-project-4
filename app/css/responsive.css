@@ -1,9 +1,5 @@
 @media screen and (min-width: 540px) {
 
-  body {
-    background-color: greenyellow;
-  }
-
   /********************************************************
   PAGE: RECRUITS
   *********************************************************/
@@ -19,6 +15,8 @@
   }
 
 }
+
+
 
 @media screen and (min-width: 700px) {
 
@@ -37,10 +35,24 @@
 
 }
 
+
+
 @media screen and (min-width: 850px) {
 
-  body {
-    background-color: tomato;
+  /********************************************************
+  PAGE: COMPANY
+  *********************************************************/
+
+  #page-company-members #generic-list .generic-list-item {
+    float: left;
+    width: 40%;
+    display: inline-block;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  #page-company-members #generic-list .generic-list-item:nth-child(3) {
+    clear: left;
   }
 
   /********************************************************
@@ -61,6 +73,8 @@
 
 }
 
+
+
 @media screen and (min-width: 1000px) {
 
   /********************************************************
@@ -75,6 +89,29 @@
   }
 
   #page-missions #generic-list .generic-list-item:nth-child(4) {
+    clear: left;
+  }
+
+}
+
+
+
+@media screen and (min-width: 1000px) {
+
+  /********************************************************
+  PAGE: COMPANY
+  *********************************************************/
+
+  #page-company-members #generic-list .generic-list-item {
+    float: left;
+    width: 28%;
+  }
+
+  #page-company-members #generic-list .generic-list-item:nth-child(3) {
+    clear: none;
+  }
+
+  #page-company-members #generic-list .generic-list-item:nth-child(4) {
     clear: left;
   }
 
